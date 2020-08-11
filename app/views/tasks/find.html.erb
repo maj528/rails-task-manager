@@ -2,5 +2,10 @@
 <p> <%= @task.details %></p>
 <p> <%= @task.completed %></p>
 
-<%= link_to "Back to tasks", task_path %>
+<%= link_to "Back to tasks", tasks_path %>
 <!-- cant get a link to work -->
+<br>
+<%= link_to "Edit this task", edit_path %>
+<br>
+<%= link_to "Delete", task_path(@task),
+  method: :delete %>
